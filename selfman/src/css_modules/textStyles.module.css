@@ -1,0 +1,10 @@
+.text40017140darkColor {
+  font: 400 17px/140% Montserrat, sans-serif;
+  color: var(--txt-dark-color);
+  letter-spacing: 0%;
+}
+.text50017140darkColor {
+  font: 500 17px/140% Montserrat, sans-serif;
+  color: var(--txt-dark-color);
+  letter-spacing: 0%;
+}

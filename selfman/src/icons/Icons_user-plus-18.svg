@@ -1,0 +1,17 @@
+<svg width="24.000000" height="24.000000" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip4553_36017">
+			<rect id="Icons/user-plus-18" width="24.000000" height="24.000000" fill="white" fill-opacity="0"/>
+		</clipPath>
+	</defs>
+	<rect id="Icons/user-plus-18" width="24.000000" height="24.000000" fill="#FFFFFF" fill-opacity="0"/>
+	<g clip-path="url(#clip4553_36017)">
+		<path id="Vector" d="M14 19C14 17.4087 13.3679 15.8826 12.2427 14.7574C11.1174 13.6321 9.59131 13 8 13C6.40869 13 4.88257 13.6321 3.75732 14.7574C2.63208 15.8826 2 17.4087 2 19" stroke="#001731" stroke-opacity="1.000000" stroke-width="2.000000" stroke-linejoin="round" stroke-linecap="round"/>
+		<path id="Vector" d="M8 13C5.79089 13 4 11.2092 4 9C4 6.79083 5.79089 5 8 5C10.2091 5 12 6.79083 12 9C12 11.2092 10.2091 13 8 13Z" stroke="#001731" stroke-opacity="1.000000" stroke-width="2.000000" stroke-linejoin="round"/>
+		<path id="Vector" d="M19 8L19 14" stroke="#001731" stroke-opacity="1.000000" stroke-width="2.000000" stroke-linejoin="round" stroke-linecap="round"/>
+		<path id="Vector" d="M22 11L16 11" stroke="#001731" stroke-opacity="1.000000" stroke-width="2.000000" stroke-linejoin="round" stroke-linecap="round"/>
+	</g>
+</svg>

@@ -1,0 +1,412 @@
+* {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.menu {
+  position: absolute;
+  width: 300px;
+  height: 1080px;
+  left: 0;
+  right: 1620px;
+  top: 0;
+  bottom: 0;
+  background: var(--sidebar-color);
+  transition: var(--tran-03);
+}
+.menu.dark {
+  --sidebar-color: #3a3b3c;
+}
+.menu .menu-bar li a svg g path,
+.menu .log-out a svg g path {
+  stroke: var(--txt-dark-color);
+  transition: var(--tran-03);
+}
+.menu.dark .name,
+.menu.dark .menu-bar li a .nav-text,
+.menu.dark .log-out a .nav-text,
+.menu.dark .menu-bar li a svg g path,
+.menu.dark .log-out a svg g path,
+.menu.menu.dark .user-name,
+.menu.menu.dark .user-position {
+  color: var(--txt-lightblue-color);
+  stroke: var(--txt-lightblue-color);
+}
+.menu.close {
+  width: 140px;
+}
+.header {
+  margin: 30px 0 42px 30px;
+  display: flex;
+  align-items: center;
+}
+.logo-name {
+  display: flex;
+  width: 228px;
+  height: 60px;
+  align-items: center;
+}
+.logo {
+  position: static;
+  width: 60px;
+  height: 60px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin-right: 12px;
+  background: rgb(217, 217, 217);
+  border-radius: 50%;
+  transition: var(--tran-03);
+  cursor: pointer;
+}
+.menu.close .logo {
+  margin: 0 0 0 10px;
+}
+.name {
+  position: static;
+  width: 156px;
+  height: 46px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  color: var(--txt-dark-color);
+  font-family: Montserrat;
+  font-size: 38px;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-align: left;
+  transition: var(--tran-03);
+  cursor: pointer;
+}
+.menu.close .name,
+.menu.close .nav-text {
+  opacity: 0;
+}
+.close-button {
+  position: absolute;
+  width: 28px;
+  height: 40px;
+  left: 272px;
+  right: -272px;
+  top: 44px;
+  bottom: -44px;
+  border-radius: 6px 0px 0px 6px;
+  background: var(--button-color);
+  display: flex;
+  align-items: center;
+  transition: var(--tran-03);
+  cursor: pointer;
+}
+.close-button svg g path {
+  stroke: var(--txt-lightblue-color);
+}
+.menu.dark .close-button {
+  background: grey;
+}
+.menu.close .close-button {
+  left: 112px;
+}
+.menu.close .close-button svg {
+  transform: rotate(180deg);
+}
+.menu-bar li {
+  position: static;
+  width: 300px;
+  height: 54px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0px 0px;
+  transition: var(--tran-03);
+}
+.menu.close li,
+.menu.close .log-out {
+  width: 140px;
+}
+.menu-bar li a,
+.log-out a {
+  position: static;
+  width: 300px;
+  height: 54px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 14px 20px 16px 30px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0px 0px;
+  transition: var(--tran-03);
+}
+.menu.close .menu-bar li a,
+.menu.close .log-out a {
+  padding-left: 58px;
+}
+.menu-bar li a .icon,
+.log-out .icon {
+  height: 24px;
+  width: 24px;
+}
+.menu-bar li a .nav-text,
+.log-out a .nav-text {
+  position: static;
+  width: 156px;
+  height: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 0px 10px;
+  color: var(--txt-dark-color);
+  font-family: Montserrat;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 140%;
+  letter-spacing: 0%;
+  text-align: left;
+  transition: var(--tran-03);
+}
+.menu-bar li:hover a .nav-text,
+.log-out:hover a .nav-text,
+.menu-bar li:hover a svg g path,
+.log-out:hover a svg g path {
+  color: var(--txt-lightblue-color);
+  stroke: var(--txt-lightblue-color);
+}
+.menu-bar li:hover,
+.log-out:hover {
+  border-radius: 16px 0px 0px 16px;
+  background: var(--button-color);
+}
+.menu.close .menu-bar li:hover,
+.menu.close .log-out:hover {
+  border-radius: 16px 16px 16px 16px;
+  background: var(--button-color);
+}
+.menu.dark .menu-bar li:hover,
+.menu.dark .log-out:hover {
+  border-radius: 16px 0px 0px 16px;
+  background: gray;
+}
+.menu.dark.close .menu-bar li:hover,
+.menu.dark.close .log-out:hover {
+  border-radius: 16px 16px 16px 16px;
+  background: gray;
+}
+a {
+  text-decoration: none;
+}
+.business-menu {
+  width: 300px;
+  height: 289px;
+  left: 0;
+  right: 0;
+  top: 132px;
+  bottom: 659px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px 0px 19px 0px;
+}
+.support-menu {
+  margin-top: 20px;
+}
+.green-flag {
+  position: absolute;
+  right: 5px;
+  width: auto;
+  height: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 8px 0px 8px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 0px 3px;
+  border-radius: 16px;
+  background: var(--green-color);
+  color: var(--txt-lightblue-color);
+  font-family: Montserrat;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 140%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.menu.close .green-flag {
+  display: none;
+}
+.user-data {
+  position: absolute;
+  width: 300px;
+  height: 58px;
+  left: 0;
+  right: 0;
+  top: 643px;
+  bottom: 379px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0px 30px 0px 30px;
+  transition: var(--tran-03);
+}
+.menu.close .user-data {
+  padding-left: 41px;
+}
+.user-photo {
+  position: static;
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  background: url(../../images/userPhoto.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.user-personal-data {
+  position: static;
+  width: 172px;
+  height: 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px;
+  flex: none;
+  order: 1;
+  flex-grow: 1;
+  margin: 0px 10px;
+}
+.user-name {
+  position: static;
+  width: 172px;
+  height: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px;
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+  margin: 4px 0px;
+  color: var(--txt-dark-color);
+  font-family: Montserrat;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 140%;
+  letter-spacing: 0%;
+  text-align: left;
+  transition: var(--tran-03);
+}
+.user-position {
+  position: static;
+  width: 172px;
+  height: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px;
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+  margin: 4px 0px;
+  color: rgb(20, 50, 85);
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: 0%;
+  text-align: left;
+  transition: var(--tran-03);
+}
+.log-out {
+  position: absolute;
+  width: 300px;
+  height: 54px;
+  left: 0;
+  right: 0;
+  top: 905px;
+  bottom: 121px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 14px 20px 16px 0;
+  transition: var(--tran-03);
+}
+.switcher {
+  position: absolute;
+  width: 80px;
+  height: 42px;
+  left: 30px;
+  top: 988px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 6px;
+  box-sizing: border-box;
+  border: 1px solid rgb(232, 232, 232);
+  border-radius: 20px;
+  background: rgb(255, 255, 255);
+}
+.menu.dark .sun {
+  background: rgb(255, 255, 255);
+}
+.sun {
+  position: static;
+  width: 30px;
+  height: 30px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 6px 14px 6px 6px;
+  background: rgb(0, 149, 192);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: var(--tran-03);
+}
+.menu.dark .moon {
+  background: rgb(255, 255, 123);
+  border-radius: 50%;
+}
+.moon {
+  position: static;
+  width: 30px;
+  height: 30px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 6px 6px 6px 0px;
+  cursor: pointer;
+  transition: var(--tran-03);
+}
+

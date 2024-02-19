@@ -1,0 +1,16 @@
+<svg width="24.000000" height="24.000000" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip4553_36016">
+			<rect id="Icons/circle-dollar-sign19" width="24.000000" height="24.000000" fill="white" fill-opacity="0"/>
+		</clipPath>
+	</defs>
+	<rect id="Icons/circle-dollar-sign19" width="24.000000" height="24.000000" fill="#FFFFFF" fill-opacity="0"/>
+	<g clip-path="url(#clip4553_36016)">
+		<path id="Vector" d="M12 22C6.47717 22 2 17.5228 2 12C2 6.47717 6.47717 2 12 2C17.5228 2 22 6.47717 22 12C22 17.5228 17.5228 22 12 22Z" stroke="#001731" stroke-opacity="1.000000" stroke-width="2.000000" stroke-linejoin="round"/>
+		<path id="Vector" d="M16 8L10 8C9.4696 8 8.96082 8.21069 8.58582 8.58582C8.21069 8.96088 8 9.46954 8 10C8 10.5305 8.21069 11.0391 8.58582 11.4142C8.96082 11.7893 9.4696 12 10 12L14 12C14.5304 12 15.0392 12.2107 15.4142 12.5858C15.7893 12.9609 16 13.4695 16 14C16 14.5305 15.7893 15.0391 15.4142 15.4142C15.0392 15.7893 14.5304 16 14 16L8 16" stroke="#001731" stroke-opacity="1.000000" stroke-width="2.000000" stroke-linejoin="round" stroke-linecap="round"/>
+		<path id="Vector" d="M12 18L12 6" stroke="#001731" stroke-opacity="1.000000" stroke-width="2.000000" stroke-linejoin="round" stroke-linecap="round"/>
+	</g>
+</svg>

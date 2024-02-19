@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --sidebar-color: rgb(255, 255, 255);
+  --txt-dark-color: rgb(0, 23, 49);
+  --txt-darklight-color: rgb(20, 50, 85);
+  --txt-lightblue-color: rgb(244, 255, 255);
+  --button-color: rgb(0, 149, 192);
+  --green-color: rgb(3, 182, 42);
+  --bg-color: rgb(253, 253, 253);
+  --darklight-color: #85878a;
+
+  --tran-02: all 0.2s ease;
+  --tran-03: all 0.3s ease;
+  --tran-04: all 0.4s ease;
+  --tran-05: all 0.5s ease;
+}
