@@ -43,7 +43,7 @@
 .login-sign-up-form {
   position: absolute;
   width: 473px;
-  height: 510px;
+  height: auto;
   left: 724px;
   top: 150px;
   display: flex;
