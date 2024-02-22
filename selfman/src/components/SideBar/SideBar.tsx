@@ -16,7 +16,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { RootState } from "../../redux/store";
 import { changeSideBarMode } from "../../redux/sideBarMode/sideBarModeSlice";
 import { changeLightDarkMode } from "../../redux/lightDarkMode/lightDarkModeSlice";
-import { Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 
 const Sidebar = () => {
   const currentMode = useSelector(
@@ -36,6 +36,7 @@ const Sidebar = () => {
   const sizeMode = currentSizeBar ? "" : "close";
 
   return (
+    <>
     <div className={`menu ${darkMode} ${sizeMode}`}>
       <header className="header">
         <div className="logo-name">
@@ -60,7 +61,7 @@ const Sidebar = () => {
       </header>
       <div className="menu-bar">
         <ul className="menu-links business-menu">
-          <Link to={"/"}>
+          <Link to={"/home"}>
             <li className="nav-link">
               <a href="#">
                 <Icons_layout_dashboard10 className="icon" />
@@ -126,12 +127,14 @@ const Sidebar = () => {
           <h6 className="user-position nav-text">SelfMan MVP</h6>
         </div>
       </div>
+      <Link to={"/login"}>
       <div className="log-out">
         <a href="#">
           <Icons_log_out13 className="icon" />
           <h4 className="text nav-text">Log out</h4>
         </a>
       </div>
+      </Link>
       <div className="switcher">
         <Icons_sun12
           onClick={() => {
@@ -147,6 +150,8 @@ const Sidebar = () => {
         />
       </div>
     </div>
+    <Outlet/>
+    </>
   );
 };
 
