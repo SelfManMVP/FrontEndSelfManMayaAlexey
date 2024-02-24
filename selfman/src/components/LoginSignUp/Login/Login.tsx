@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./Login.css";
 import { ReactComponent as Icons_eye_off33 } from "../../../icons/Icons_eye-off33.svg";
 import { ReactComponent as Icons_eye34 } from "../../../icons/Icons_eye34.svg";
+import { Link } from "react-router-dom";
 
 const Login = () => {
   const [userType, setUserType] = useState("agent");
@@ -93,9 +94,11 @@ const Login = () => {
             )}
           </div>
         </div>
+        <Link to={'/home'}>
         <button className="login-button" onClick={() => handleLoginClick()}>
           Log in
         </button>
+        </Link>
         <a href="">Do you need help? Forgot your login or password?</a>
       </div>
       <hr className="login-signup-line" />
@@ -103,7 +106,9 @@ const Login = () => {
         <div className="login-to-link-signup-text">
           Don’t have a SelfMan account?
         </div>
+        <Link to={"/sign_up"}>
         <button className="login-to-button-signup">Sign up</button>
+        </Link>
       </div>
     </div>
   );

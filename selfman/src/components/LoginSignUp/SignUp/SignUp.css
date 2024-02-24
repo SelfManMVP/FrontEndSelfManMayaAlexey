@@ -1,6 +1,148 @@
 * {
-    font-family: "Montserrat", sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.sign-up{
+  display: flex;
+  flex-direction: column;
+}
+.sign-up-title {
+  width: 430px;
+  height: 34px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: rgb(0, 23, 49);
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 140%;
+  letter-spacing: 0%;
+  margin-bottom: 10px;
+}
+.sign-up-form {
+  width: 430px;
+  height: 278px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px 20px 20px 20px;
+  background: rgb(255, 255, 255);
+}
+.sign-up-form-inputs {
+  width: 390px;
+  height: 38px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 10px 0px 10px;
+  box-sizing: border-box;
+  border-bottom: 1px solid rgb(232, 232, 232);
+}
+.sign-up-form-inputs input {
+  width: 326px;
+  height: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 6px 0px 8px 0px;
+  font-family: Montserrat;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: 0%;
+  text-align: left;
+  border: none;
+  outline: none;
+}
+.sign-up-button {
+  width: 390px;
+  height: 54px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 14px 30px 16px 30px;
+  align-self: stretch;
+  margin: 20px 0px;
+  border-radius: 16px;
+  background: rgb(0, 149, 192);
+  border: none;
+  color: rgb(244, 255, 255);
+  font-family: Montserrat;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: 0%;
+}
+.sign-up h6 {
+  width: 390px;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0 0 20px 0px;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: 0%;
+  text-align: left;
+  color: var(--button-color);
+}
+.sign-up hr {
+  display: flex;
+  align-self: center;
+  width: 391px;
+  height: 0;
+  margin: 0 0 20px 0px;
+  border: 1px solid rgb(232, 232, 232);
+}
+.sign-up-to-login{
+width: 430px;
+height: 92px;
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: center;
+align-self: stretch;
+}
+.sign-up-to-login h5{
+width: 281px;
+height: 24px;
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: center;
+margin: 0 0 14px 0px;
+color: rgb(160, 183, 209);
+font-family: Montserrat;
+font-size: 17px;
+font-weight: 400;
+line-height: 140%;
+letter-spacing: 0%;
+text-align: center;
+}
+.sign-up-to-login button{
+width: 113px;
+height: 54px;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 14px 30px 16px 30px;
+box-sizing: border-box;
+border: 1px solid rgb(0, 76, 98);
+border-radius: 16px;
+background: rgb(255, 255, 255);
+}
+.sign-up-to-login a{
+  text-decoration: none;
+}

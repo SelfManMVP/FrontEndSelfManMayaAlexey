@@ -1,8 +1,9 @@
 import React from "react";
 import "./LoginSignUp.css";
-import Login from "./Login/Login";
+import Login from "../../components/LoginSignUp/Login/Login";
 import { ReactComponent as Icons_x31 } from "../../icons/Icons_x31.svg";
-import SignUp from "./SignUp/SignUp";
+import SignUp from "../../components/LoginSignUp/SignUp/SignUp";
+import { Outlet, Route, Routes } from "react-router-dom";
 
 const LoginSignUp = () => {
   return (
@@ -14,11 +15,12 @@ const LoginSignUp = () => {
         </div>
       </header>
       <div className="login-sign-up-form">
-        <Icons_x31 className="login-icon-close"/>
-        <Login/>
-        {/* <SignUp/> */}
+        <Icons_x31 className="login-icon-close" />
+        <Outlet/>
       </div>
-      <div className="copy-right">© SelfMan 2024 Designed by Bolshakov Arthur</div>
+      <div className="copy-right">
+        © SelfMan 2024 Designed by Bolshakov Arthur
+      </div>
     </div>
   );
 };
