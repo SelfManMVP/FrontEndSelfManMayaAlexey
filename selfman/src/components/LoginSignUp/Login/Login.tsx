@@ -94,9 +94,11 @@ const Login = () => {
             )}
           </div>
         </div>
+        <Link to={'/home'}>
         <button className="login-button" onClick={() => handleLoginClick()}>
           Log in
         </button>
+        </Link>
         <a href="">Do you need help? Forgot your login or password?</a>
       </div>
       <hr className="login-signup-line" />

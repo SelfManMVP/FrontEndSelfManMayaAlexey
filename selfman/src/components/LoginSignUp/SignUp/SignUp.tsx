@@ -1,10 +1,22 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./SignUp.css";
 import { ReactComponent as Icons_eye_off33 } from "../../../icons/Icons_eye-off33.svg";
 import { ReactComponent as Icons_eye34 } from "../../../icons/Icons_eye34.svg";
 import { Link, useNavigate } from "react-router-dom";
+import { setCreateUserData } from "../../../redux/createUser/createUserDataSlice";
+import { useAppDispatch, useAppSelector } from "../../../hooks/hooks";
+import { fetchCreateUserDataAnswer } from "../../../redux/createUser/createUserDataAnswerSlice";
 
 const SignUp = () => {
+  const createUserData = useAppSelector(
+    (state) => state.createUserData
+  );
+  const createUserDataAnswer = useAppSelector(
+    (state) => state.createUserDataAnswer
+  );
+
+  const dispatch = useAppDispatch();
+
   const [showPassword, setShowPassword] = useState(false);
   const typeInput = showPassword ? "text" : "password";
 
@@ -17,15 +29,11 @@ const SignUp = () => {
 
   const navigate = useNavigate();
 
-  const handleSignUpClick = () => {
-    const userSignUpData = {
-      userEmail,
-      userPassword,
-      userPasswordConfirm
+  useEffect(() => {
+    if(createUserData.email) {
+    dispatch(fetchCreateUserDataAnswer(createUserData));
     }
-    console.log(userSignUpData);
-    navigate('/home');
-  };
+}, [createUserData]);
 
   return (
     <div className="sign-up">
@@ -67,7 +75,9 @@ const SignUp = () => {
             <Icons_eye34 onClick={() => setShowPasswordConf((prev) => !prev)} />
           )}
         </div>
-        <button className="sign-up-button" onClick={() => handleSignUpClick()}>
+        <button className="sign-up-button" onClick={() => {
+          dispatch(setCreateUserData({ email: userEmail, password: userPassword }));
+          }}>
           Agree & Join
         </button>
         <h6>
@@ -82,6 +92,9 @@ const SignUp = () => {
           <button>Log in</button>
         </Link>
       </div>
+      <h2>{`${createUserDataAnswer.answer.id}`}</h2>
+      <h2>{`${createUserDataAnswer.answer.confirmed}`}</h2>
+      <h2>{`${createUserDataAnswer.answer.roles[0].name}`}</h2>
     </div>
   );
 };
