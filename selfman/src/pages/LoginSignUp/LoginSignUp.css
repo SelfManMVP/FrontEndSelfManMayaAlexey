@@ -42,7 +42,7 @@
 }
 .login-sign-up-form {
   position: absolute;
-  width: 473px;
+  width: auto;
   height: auto;
   left: 724px;
   top: 150px;

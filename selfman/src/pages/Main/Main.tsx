@@ -6,6 +6,7 @@ import PartnerBase from "../../components/PartnerBase/PartnerBase";
 import { Route, Routes } from "react-router-dom";
 import Login from "../../components/LoginSignUp/Login/Login";
 import SignUp from "../../components/LoginSignUp/SignUp/SignUp";
+import СonfirmEmail from "../../components/LoginSignUp/СonfirmEmail/СonfirmEmail";
 import LoginSignUp from "../LoginSignUp/LoginSignUp";
 
 const Main = () => {
@@ -15,6 +16,7 @@ const Main = () => {
         <Route index element={<Login />} />
         <Route path="/login" element={<Login />} />
         <Route path="/sign_up" element={<SignUp />} />
+        <Route path="/confirm_email" element={<СonfirmEmail />} />
       </Route>
       <Route path="/" element={<Sidebar />}>
         <Route index element={<SideRight />} />

@@ -31,7 +31,8 @@ const SignUp = () => {
 
   useEffect(() => {
     if(createUserData.email) {
-    dispatch(fetchCreateUserDataAnswer(createUserData));
+    const res = dispatch(fetchCreateUserDataAnswer(createUserData));
+    console.log(res);
     }
 }, [createUserData]);
 
@@ -76,7 +77,7 @@ const SignUp = () => {
           )}
         </div>
         <button className="sign-up-button" onClick={() => {
-          dispatch(setCreateUserData({ email: userEmail, password: userPassword }));
+          dispatch(setCreateUserData({ email: userEmail, password: userPassword }))
           }}>
           Agree & Join
         </button>

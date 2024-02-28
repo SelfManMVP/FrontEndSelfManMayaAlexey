@@ -1,0 +1,92 @@
+* {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.confirm-email {
+  display: flex;
+  flex-direction: column;
+}
+.confirm-email-title {
+  width: 473px;
+  height: 34px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: rgb(0, 23, 49);
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 140%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+.confirm-email-form{
+width: 473px;
+height: 306px;
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: center;
+padding: 20px 30px;
+border-radius: 0px 0px 16px 16px;
+background: rgb(255, 255, 255);
+}
+.confirm-email-form h4{
+width: 413px;
+height: 24px;
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: center;
+color: rgb(0, 23, 49);
+font-family: Montserrat;
+font-size: 17px;
+font-weight: 500;
+line-height: 140%;
+letter-spacing: 0%;
+text-align: center;
+}
+.confirm-email-form .inputs{
+width: 244px;
+height: 64px;
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: center;
+margin: 20px 0px;
+}
+.confirm-email-form .inputs h6{
+width: 37px;
+height: 20px;
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: center;
+margin-bottom: 10px;
+color: rgb(160, 183, 209);
+font-family: Montserrat;
+font-size: 14px;
+font-weight: 400;
+line-height: 140%;
+letter-spacing: 0%;
+}
+.confirm-email-form .inputs div{
+  display: flex;
+}
+.confirm-email-form .inputs input{
+width: 34px;
+height: 34px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 4px 10px 4px 10px;
+margin: 0px 4px;
+box-sizing: border-box;
+border: 1px solid rgb(232, 232, 232);
+border-radius: 4px;
+background: rgb(255, 255, 255);
+outline-color: rgb(0, 149, 192);
+}
